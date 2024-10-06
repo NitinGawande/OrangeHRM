@@ -39,3 +39,12 @@ class Search_name_id:
                 flag=True
                 break
         return flag
+
+    def idofemp(self,id):
+        ids=self.wait.until(EC.presence_of_all_elements_located((By.XPATH,self.ids_results_namo)))
+        flag=False
+        for eid in ids:
+            if eid.text==id:
+                flag=True
+                break
+        return flag
