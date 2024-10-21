@@ -36,7 +36,7 @@ try:
 
 
 
-        # @pytest.mark.sanity
+        @pytest.mark.sanity
         def test_searchbyid(self,setup):
             self.driver,self.wait=setup
             self.driver.maximize_window()

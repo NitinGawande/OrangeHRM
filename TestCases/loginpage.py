@@ -4,7 +4,7 @@ from PageObject.LoginPage import Login
 
 
 class Test_001_loginpage:
-    baseurl="https://opensource-demo.orangehrmlive.com/auth/login"
+    baseurl="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
     username="Admin"
     password = "admin123"
 
