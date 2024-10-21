@@ -12,6 +12,10 @@ class Login:
         self.driver=driver
         self.wait = wait
 
+    def logo(self):
+        a=self.wait.until(EC.element_to_be_clickable((By.XPATH,"//img[@alt='company-branding']"))).is_displayed()
+
+
 
     def SetUsername(self,username):
         self.wait.until(EC.element_to_be_clickable((By.NAME,self.username_text_name))).click()
